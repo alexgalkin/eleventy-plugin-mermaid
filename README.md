@@ -33,9 +33,9 @@ npm install @alexhalkin/eleventy-plugin-mermaid
 Include it in your `.eleventy.js` config file:
 
 ```js
-const pluginMermaid = require("@alexhalkin/eleventy-plugin-mermaid");
+import pluginMermaid from "@alexhalkin/eleventy-plugin-mermaid";
 
-module.exports = (eleventyConfig) => {
+export default function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginMermaid);
 };
 ```
@@ -71,7 +71,7 @@ Global config options, set in `eleventy.js`.
 ### Config Examples
 
 ```js
-import pluginMermaid from "@kevingimbel/eleventy-plugin-mermaid";
+import pluginMermaid from "@alexhalkin/eleventy-plugin-mermaid";
 
 export default function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginMermaid, {
