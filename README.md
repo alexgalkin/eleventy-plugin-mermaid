@@ -1,6 +1,8 @@
 # eleventy-plugin-mermaid
 > Integrate [Mermaid](https://mermaid-js.github.io/mermaid/#/) with [eleventy](https://11ty.dev/)
 
+NOTE: This is a fork of the original [`@kevingimbel/eleventy-plugin-mermaid`](https://www.npmjs.com/package/@kevingimbel/eleventy-plugin-mermaid) plugin with `import/export` syntax support.
+
 <!-- BEGIN mktoc -->
 
 - [eleventy-plugin-mermaid](#eleventy-plugin-mermaid)
@@ -25,13 +27,13 @@
 Install via `npm`:
 
 ```bash
-npm install @kevingimbel/eleventy-plugin-mermaid
+npm install @alexhalkin/eleventy-plugin-mermaid
 ```
 
 Include it in your `.eleventy.js` config file:
 
 ```js
-const pluginMermaid = require("@kevingimbel/eleventy-plugin-mermaid");
+const pluginMermaid = require("@alexhalkin/eleventy-plugin-mermaid");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginMermaid);
